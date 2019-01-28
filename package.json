@@ -1,6 +1,6 @@
 {
   "name": "vue-slot-ops",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "a Vue.js mixin to manipulate component slots",
   "main": "dist/vue-slot-ops.min.js",
   "module": "dist/vue-slot-ops.esm.js",

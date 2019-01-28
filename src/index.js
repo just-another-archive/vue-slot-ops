@@ -1,8 +1,8 @@
-export const by_name = criteria => e => {
+export const by_name = (criteria, textnodes = false) => e => {
   if (!e.componentOptions && !e.tag)
-    return false
+    return textnodes && !!e.text.trim().length
 
-  const name = e.componentOptions ? e.componentOptions.Ctor.extendOptions.name : e.tag
+  const name = e.componentOptions ? e.componentOptions.Ctor.extendOptions.name || e.tag : e.tag
 
   if (criteria instanceof RegExp)
     return criteria.test(name)
