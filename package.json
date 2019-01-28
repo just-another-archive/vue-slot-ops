@@ -1,0 +1,42 @@
+{
+  "name": "vue-slot-ops",
+  "version": "1.0.1",
+  "description": "a Vue.js mixin to manipulate component slots",
+  "main": "dist/vue-slot-ops.min.js",
+  "module": "dist/vue-slot-ops.esm.js",
+  "global": "SlotOps",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./rollup.build.js",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y-nk/vue-slot-ops.git"
+  },
+  "keywords": [
+    "vuejs",
+    "slot",
+    "spread"
+  ],
+  "author": "Julien Barbay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/y-nk/vue-slot-ops/issues"
+  },
+  "peerDependencies": {
+    "vue": "^2.5.16"
+  },
+  "files": [
+    "*.md",
+    "**/*.js"
+  ],
+  "homepage": "https://github.com/y-nk/vue-slot-ops#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "rollup": "^0.60.4",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-minify-es": "^1.1.1"
+  }
+}
